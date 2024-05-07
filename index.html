@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+    <div id="intro-page">
+        <p>Please enter the password to continue:</p>
+        <input type="password" id="password-input">
+        <button onclick="checkPassword()">Enter</button>
+    </div>
+
+    <div id="homepage" style="display:none;">
+        <img src="signature.gif" id="homepageGif" style="display:none;">
+
+        <button id="nextButton" style="display:none;" onclick="goToNavigationPage()">Next</button>
+
+        <img src="signature.png" id="finalFrame" style="display:none;">
+    </div>
+    
+
+    <div id="loading-screen" class="loading-screen" style="display: none;">
+        <p>Loading...</p>
+    </div>
+    
+</body>
+</html>

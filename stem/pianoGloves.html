@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Gloves</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Adjust the path as needed -->
+</head>
+<body>
+    <header>
+        <h1>Piano Gloves</h1>
+        <nav>
+            <ul>
+                <li><a href="stem.html">Back</a></li>
+            </ul>
+        </nav>
+    </header> 
+    
+    <main>
+
+        <h1>PHASE ONE</h1>
+
+        <section class="project-description">
+            <h2>Project Overview</h2>
+            <p>This big project is aimed at bridging the gap between digital music and the tactile 
+                experience of playing an instrument. I'm designing a glove equipped with flex sensors, using 
+                conductive thread for connectivity, all orchestrated by a Lilypad Arduino. This glove will 
+                translate the movements of a pianist's hands into beautiful piano sounds without a physical 
+                piano. Incorporating Bluetooth for wireless communication and a battery for power, each 
+                finger's bend is converted into a digital signal through an ADC, then interpreted by a 
+                custom-designed Gated Recurrent Unit, GRU, network architecture. This setup promises to make 
+                music more accessible and merge the physical with the digital in the art of piano playing.
+            </p>
+        </section>
+
+        <section class="project-details">
+            <h2>Technical Details</h2>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.mdpi.com/1424-8220/19/18/3986">Figure 1: <u>(1)</u></a></li>
+                    </ul>
+                </nav>
+                <p>
+                    <img src="../../images/WORK_GRU.png" target="_blank"></a>
+                </p>
+                GRU is designed for sequence prediction tasks and it processes input sequences X (e.g., time-series data 
+                or, in your case, flex sensor readings over time). The x1,x2,x3,…,xT​ represent the sequence of inputs at 
+                each time step. The GRU has a memory component (hidden states h0​,h1​,h2​,…,hT​) that captures information 
+                from previous inputs, which influences the current output. The function F denotes the GRU's update and 
+                reset gate operations that control the flow of information. After processing the sequence, the final 
+                output y is typically passed through a softmax layer for classification tasks, which outputs a 
+                probability distribution over the classes. This could be used, for instance, to classify the type of 
+                finger gesture or the intended piano key to be played.
+                </p>
+            </p>
+            <p>
+                <nav>
+                    <ul>
+                        <li><a href="https://www.mdpi.com/1424-8220/19/18/3986">Figure 3: <u>(1)</u></a></li>
+                    </ul>
+                </nav>
+                <img src="../../images/WORK_gloveDesign.png" target="_blank"></a>
+                <p>
+                    The design sketch depict a glove integrated with flex sensors along the fingers, which measure the 
+                    degree of bend in each finger. Conductive thread is used to create connections between the sensors 
+                    and the Lilypad Arduino, a microcontroller board designed for wearables and e-textiles. The Lilypad 
+                    is responsible for processing the signals from the flex sensors. It likely uses ADC (Analog-to-Digital 
+                    Conversion) to convert the flex sensor's analog signals into digital data that the microcontroller 
+                    can understand. The system includes Bluetooth connectivity for wireless communication, probably to 
+                    send the data to another device for sound synthesis or further processing. A battery is sketched, 
+                    indicating the power source for the glove, with a voltage range suggested for the Lilypad Arduino 
+                    (2.7-5.5V). The overall design aims to create a wearable musical instrument that can detect finger 
+                    positions and gestures to produce music.
+                </p>
+            </p>
+
+        </section>
+
+        <section class="project-sources">
+            <h2>Sources</h2>
+            <p>
+                1. Chuang W-C, Hwang W-J, Tai T-M, Huang D-R, Jhang Y-J. Continuous Finger Gesture Recognition Based on Flex 
+                Sensors. Sensors. 2019; 19(18):3986. https://doi.org/10.3390/s19183986
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact Information: <a href="mailto:shibasakinodoka.gmail.com">shibasakinodoka.gmail.com</a></p>
+    </footer>
+</body>
+</html>

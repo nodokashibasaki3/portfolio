@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Grade Calculator</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Adjust the path as needed -->
+</head>
+<body>
+    <header>
+        <h1>Assignment Grade Calculator</h1>
+        <nav>
+            <ul>
+                <li><a href="stem.html">Home</a></li>
+                <!-- Add links to other sections or pages if needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            fetch('assignmentgradecalculator.html')
+                .then(response => response.text())
+                .then(html => document.getElementById('calculatorContainer').innerHTML = html)
+                .catch(error => console.error('Error loading the calculator:', error));
+        });
+    </script>    
+    
+    <main>
+
+        <h1>FINALIZED PROJECT</h1>
+
+        <section class="project-description">
+            <h2>Project Overview</h2>
+            <p>I developed an application dedicated to grade calculation. While tools such as those provided by others facilitate the 
+                computation of scores necessary for acing final examinations, they fall short in addressing the requirements 
+                of evaluating the daily assignments.
+            </p>
+        </section>
+
+        <section class="project-details">
+            <h2>Technical Details</h2>
+            <p>Coded with simple HTML and CSS in a single index.html file after an equation to calculate required assignment grade to reach a desired grade.</p>
+            <p>
+                Detailed drrivative of the equation:
+                <img src="../../images/WORK_AssignmentGradeCalculator.png" target="_blank">technical documentation</a>.
+            </p>
+        </section>
+            
+
+        <section class="project-demo">
+            <h2>Demo</h2>
+            <iframe src="../../assignment calculator/index.html" width="100%" height="600px" style="border:none;"></iframe>         
+            <p> To validate the functionality of my application, I utilized the "what-if-grade" feature on Canvas. This feature allows the input of 
+                theoretical grades for assignments to project the potential final grade based on these inputs. You might question the necessity of my HTML 
+                code given the existence of this Canvas function. The rationale lies in the limitation of the Canvas feature, which depends on the professor's 
+                upload of the assignment onto Canvas. For instance, in my healthcare class, I have a project assigned. However, the professor hasn't created 
+                the assignment tab to Canvas, rendering it absent from the Canvas grade book. This absence prohibits any speculative calculation of the grade I might receive.
+            </p>
+        </section>
+
+        <section class="project-conclusion">
+            <h2>Conclusion</h2>
+            <p>This project was enjoyable and straightforward, proving to be beneficial in my everyday academic pursuits. In the next stages of research and 
+                development, with an emphasis on enhancing the user interface, determining the percentage weight of assignments within a category could pose a 
+                challenge. It would be ideal to devise a user-friendly method that allows users to easily calculate this without the need for additional external computations.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact Information: <a href="mailto:shibasakinodoka.gmail.com">shibasakinodoka.gmail.com</a></p>
+        <!-- Add other footer details as necessary -->
+    </footer>
+</body>
+</html>

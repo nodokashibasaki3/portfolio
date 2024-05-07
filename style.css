@@ -1,0 +1,147 @@
+body {
+    background-color: #f5f5f5; /* Vintage paper background color */
+    color: #333; /* Slightly off-white text color */
+    font-family: "Courier New", Courier, monospace; /* Monospaced font for typewriter aesthetics */
+}
+
+#navigation {
+    position: absolute;
+    top: 0;
+    right: -200px;
+    color: white;
+    padding: 10px;
+    transition: right 0.5s ease-in-out;
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline-block; /* Display list items side by side */
+    margin: 0 20px; /* Spacing between list items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2em; /* Increase the font size of the links */
+    padding: 10px 15px; /* Padding around the links */
+    border-radius: 5px; /* Rounded corners for the links */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effects */
+    
+    background-color: black; /* Background color on hover */
+}
+
+nav a:hover {
+    color: green; /* Text color on hover */
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: black;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+#passwordPage {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#password-input {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 0.8em;
+    color: black; /* Added to make the input text white */
+}
+
+#signaturePage, #mainPage {
+    position: fixed;
+    top: 60;
+    left: 30;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.projects-grid, .project-p {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns side by side */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #f5f5f5;
+}
+
+.project, .project-card {
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project:hover, .project-link:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.project img, .project-card img, .video-container video, .video-container iframe, .pdf-container iframe {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .pdf-container iframe {
+        height: 400px;
+    }
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equation-container {
+    border-left: 1.5px solid white;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.fraction {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+.fraction .numerator, .fraction .denominator {
+    display: block;
+    padding: 2px;
+}
+
+.fraction .denominator {
+    border-top: 2px solid white;
+}
+
+.variable {
+    font-style: italic;
+}
